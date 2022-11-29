@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+ 	산술 연산자 연습문제
+ 	
+ 	76572 원을 지불하려고 한다.
+ 	필요한 화페단위가 몇개씩인지 계산해서 출력하세요.
+ 	
+ 	참고 ]
+ 		화페단위
+ 			50000, 10000, 5000, 1000, 500, 100, 50, 10, 1
+ 			
+ 	변수를 만들고 변수에 계산된 값을 입력해서 출력하세요.
+ 	
+ 	참고 ]
+ 		실수를 정수로 바꾸는 방법
+ 			parseInt(실수)
+ 		
+ 	힌트 ] 
+ 		/ : 나누기 연산자
+ 		% : 나머지 연산자
+ 		
+ 		예]
+ 			512 를 500으로 나눈 몫과 나머지를 구하는 방법은
+ 			
+ 			(512 - (512 % 500)) / 500 ==> 1
+ 			
+ 			512 / 500 ==> 1.XXX ==> parseInt(1.XXX) ==> 1
+ 			512 % 500 ==> 12
+ 
+ */
+ 	var total = 76572;
+ 	var calc = total;
+ 	
+ 	var oman = parseInt(calc / 50000); // 오만원권
+ 	calc = calc % 50000;  // 오만으로 나눈 나머지... 
+ 	
+ 	var man = parseInt(calc / 10000); // 만원권
+ 	calc = calc % 10000; // 만원권으로 나눈 나머지...
+ 	
+ 	var ocheon = parseInt(calc / 5000);; // 오천원권
+ 	calc = calc % 5000; // 오천원권으로 나눈 나머지...
+ 	
+ 	var cheon = parseInt(calc / 1000); // 천원권
+ 	calc = calc % 1000; // 천원권으로 나눈 나머지
+ 	
+ 	var oback = parseInt(calc / 500); // 오백원
+ 	calc = calc % 500; // 오백원으로 나눈 나머지
+ 	
+ 	var back = parseInt(calc / 100); // 백원
+ 	calc = calc % 100; // 백원으로 나눈 나머지
+ 	
+ 	var oship = parseInt(calc / 50)// 오십원
+ 	calc = calc % 50; // 오십원으로 나눈 나머지
+ 	
+ 	var ship = parseInt(calc / 10); // 십원
+ 	calc = calc % 10; // 십원으로 나눈 나머지
+ 	
+ 	var one = parseInt(calc / 1); // 일원
+ 	calc = calc % 1; // 일원으로 나눈 나머지
+ 	
+ 	
+ 	// 출력
+ 	document.write('<h3>' + total + '원은</h3>');
+ 	document.write('<h3>오만원권 ' + oman + '</h3>');
+ 	document.write('<h3>만원권 ' + man + '</h3>');
+ 	document.write('<h3>오천원권 ' + ocheon + '</h3>');
+ 	document.write('<h3>천원권 ' + cheon + '</h3>');
+ 	document.write('<h3>오백원권 ' + oback + '</h3>');
+ 	document.write('<h3>백원권 ' + back + '</h3>');
+ 	document.write('<h3>오십원권 ' + oship + '</h3>');
+ 	document.write('<h3>십원권 ' + ship + '</h3>');
+ 	document.write('<h3>일원권 ' + one + '</h3>');
+ 	document.write('<h3> 이 필요합니다. </h3>');
+ 	
+</script>
+</head>
+<body>
+
+</body>
+</html>
